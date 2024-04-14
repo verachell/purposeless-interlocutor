@@ -1,0 +1,6 @@
+<%= form_with(model: comment, class: "mb-7") do |form| %>
+  <div class="mb-5 ml-5">
+    <%= form.text_field :description, placeholder: "What's happening?", class: "inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-200 outline-none" %>
+    <%= form.submit "Save", class: "btn py-2 ml-2 bg-gray-900 text-lime-200" %>
+  </div>
+<% end %>

@@ -1,0 +1,7 @@
+ <div class=" ml-6">
+	<%= button_to raw("&#128163; Delete all and start over"), comment_path(@comments),
+				  method: :delete,
+				  data: { confirm: 'Are you sure?' },
+				  form: { data: { turbo_confirm: "Are you sure?" } },
+				  class: "btn bg-red-100" %>
+  </div>
