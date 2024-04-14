@@ -8,7 +8,16 @@ The name says it all: provides pointless responses to status updates
 Most of the logic is located in the comments controller at `app/controllers/comments_controller.rb`
 
 ## How to use it
-Assuming you already have Ruby and rails installed on your local machine, download the main branch of this repo and in the working directory, type `rails server` then in your browser navigate to `localhost:3000`
+Assuming you already have Ruby and rails installed on your local machine, download the main branch of this repo.
+
+Then in the working directory, do the following commands:
+
+```
+bundle exec rails db:migrate
+bin/rails tailwindcss:install
+```
+
+Then `rails server` then in your browser navigate to `localhost:3000`
 
 This app is also available deployed to Render but I'm not publicly sharing the URL here for several reasons, including that I won't have it running continuously. This is the `main` branch for local use. The `deploy-render` branch reflects the Render-ready version
 
